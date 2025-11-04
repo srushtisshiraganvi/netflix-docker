@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  netflix_app:
+    image: netflix_image
+    container_name: netflix_container
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
